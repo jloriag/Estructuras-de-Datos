@@ -32,11 +32,13 @@ public:
     }
 
     void agregarArista(char origen, char destino) {
+        //A
+        //B
         int i = indiceVertice(origen);
         int j = indiceVertice(destino);
         if (i != -1 && j != -1) {
-            matriz[i][j] = 1;
-            matriz[j][i] = 1; // Grafo no dirigido
+            matriz[i][j] = 1; // A -> B
+            //matriz[j][i] = 1; // B -> A Grafo no dirigido
         }
     }
 
